@@ -29,7 +29,7 @@ $(function() {                                    // When the DOM is ready
   // CLICK ON THE EVENT TO LOAD A TIMETABLE 
   $('#content').on('click', '#event a', function(e) {  // User clicks on event
 
-    e.preventDefault();                                // Prevent loading page
+    //e.preventDefault();                                // Prevent loading page
     var loc = this.id.toUpperCase();                   // Get value of id attr
 
     var newContent = '';                               // Build up timetable by
@@ -50,7 +50,7 @@ $(function() {                                    // When the DOM is ready
 
   // CLICK ON A SESSION TO LOAD THE DESCRIPTION
   $('#content').on('click', '#sessions li a', function(e) { // Click on session
-    e.preventDefault();                                     // Prevent loading
+    //e.preventDefault();                                     // Prevent loading
     var fragment = this.href;                               // Title is in href
 
     fragment = fragment.replace('#', ' #');                 // Add space after#
