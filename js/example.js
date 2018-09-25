@@ -29,7 +29,7 @@ $(function() {                                    // When the DOM is ready
   // CLICK ON THE EVENT TO LOAD A TIMETABLE 
   $('#content').on('click', '#event a', function(e) {  // User clicks on event
 
-    //e.preventDefault();                                // Prevent loading page
+    e.preventDefault();                                // Prevent loading page
     var loc = this.id.toUpperCase();                   // Get value of id attr
 
     var newContent = '';                               // Build up timetable by
